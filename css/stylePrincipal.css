@@ -73,3 +73,14 @@ body{
   height: 200px;
 }
 
+
+/* Calcula a altura do card */
+.card-ajustavel {
+  height: calc(100vh - 56px - 30px);
+  overflow: auto; /* Adicione rolagem se o conteúdo do card for muito grande */
+}
+
+
+.btForMy {
+  border-radius: none;
+}
