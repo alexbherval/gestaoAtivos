@@ -81,6 +81,45 @@ body{
 }
 
 
-.btForMy {
-  border-radius: none;
+.dashBodyCard .card {
+  border: none;
+  -webkit-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+.dashBodyCard p {
+  text-align: end;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.dashBodyCard img {
+  height: 110px;
+  width: auto;
+}
+
+.dashBodyCard button {
+  width: 100%;
+  border-radius: 0px 0px 6px 6px;
+}
+
+.dashBodyCard h5 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.table-container {
+  max-height: 300px; /* Altura máxima da tabela */
+  overflow: auto; /* Rolagem vertical */
+}
+.table-header {
+
+  position: sticky;
+  top: 0;
+  background-color: #fefefe; /* Cor de fundo do cabeçalho */
+  z-index: 1;
+}
+table {
+  width: 100%;
 }
