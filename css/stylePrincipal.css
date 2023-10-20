@@ -1,0 +1,75 @@
+body{
+    background: #eee;
+   }
+   
+   #side_nav{
+    background: #000;
+    min-width: 265px;
+    max-width: 265px;
+    transition: all 0.3s;
+   }
+   .content{
+      min-height: 100vh;
+      width: 100%;
+   }
+   hr.h-color{
+    color: #eee;
+   }
+   
+   .sidebar li.active{
+      background: #eee;
+      border-radius: 8px;
+   }
+   
+   .sidebar li.active a, .sidebar li.active a:hover {
+    color: #000;
+   }
+   .sidebar li a{
+    color: #fff;
+   }
+
+  .textDash {
+    text-align: justify;
+    padding: 5px 15px;
+  }
+   
+   @media(max-width: 767px){
+    #side_nav{
+      margin-left: -265px;
+      position: absolute;
+      min-height: 100vh;
+      z-index: 1;
+   
+    }
+    #side_nav.active{
+      margin-left: 0;
+     }
+   }
+
+#frmGlobal {
+  background-color: #fefefe;
+  margin: 0;
+  padding: 0;
+  min-height: 500px;
+  max-height: 500px;
+}
+
+#frmGlobal .card-body input {
+  align-content: center;
+  align-items: center;
+}
+#btnActions {
+  display: flex;
+}
+
+#btnActions button{
+  border-radius: 3px;
+  width: 30px;
+  margin: 0;
+  padding: 0;
+}
+#btnUpForm {
+  width: 68px;
+  height: 200px;
+}
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intranet Uniabeu</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/stylePrincipal.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- bootstrap Icons JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--Incluindo Popper e JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <!--JS do Menu-->
+    <script defer src="../../js/actionsMenu.js"></script>
+
+</head>
+<body>  
+<!--menu-->
+
+<main class="main-container d-flex">
+    <nav class="sidebar" id="side_nav">
+        <div class="header-box px-2 pt-5 pb-4 d-flex justify-content-between">
+            <h1 class="fs-4"><span class="bg-warning text-dark rounded shadow px-2 me-2">JS</span> <span
+                    class="text-white">DEVT3CH CODE</span></h1>
+            <button class="btn d-md-none d-block close-btn px-1 py-0 text-white"><i class="bi bi-box-arrow-in-up-left"></i></button>
+        </div>
+
+        <ul class="list-unstyled px-2 pt-4">
+            <li class="active"><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="bi bi-speedometer2"></i> Dashboard</a></li>
+            <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="bi bi-box-seam"></i> Equipamento</a></li>
+            <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="bi bi-headset"></i> Assistência</a></li>
+            <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="bi bi-shield-check"></i>
+                    Gerência</a></li>
+                    <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="bi bi-shield-check"></i> Administração</a></li>
+                    
+                    <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="bi bi-archive"></i>
+                        Estoque</a></li>
+            <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="bi bi-wrench-adjustable-circle"></i> Ferramentas</a></li>
+        </ul>
+        <hr class="h-color mx-2">
+
+        <ul class="list-unstyled px-2">
+            <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="bi bi-gear-fill"></i>
+                    Configurações</a></li>
+        <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block d-flex justify-content-between">
+            <span><i class="bi bi-bell-fill"></i> Menssagens</span>
+            <span class="bg-dark rounded-pill text-white py-0 px-2">02</span>
+            </a>
+        </li>
+
+        </ul>
+
+    </nav>
+    <div class="content">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-between d-md-none d-block">
+                 <button class="btn px-1 py-0 open-btn me-2"><i class="bi bi-box-arrow-in-up-right"></i></button>
+                    <a class="navbar-brand fs-4" href="#"><span class="bg-warning rounded px-2 py-0 text-white">JS</span></a>
+                   
+                </div>
+                <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-person-bounding-box"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Profile</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="dashboard-content px-3 pt-4 textDash">
+            <h2 class="fs-5 textDash"> Dashboard</h2>
+            <p class="textDash">Dashboard é uma estrutura de página web projetada para fornecer informações e recursos de forma clara e concisa em um único local. Essas páginas são frequentemente utilizadas em aplicativos da web, sistemas de gerenciamento e painéis de controle para permitir que os usuários acompanhem dados, métricas e funcionalidades essenciais de maneira eficiente..</p>
+            <h4 class="fs-5 textDash">O que é um Dashboard?</h4>
+            <p class="textDash">Um dashboard é uma interface visual que reúne informações e funcionalidades cruciais em um único local, geralmente apresentando-as de maneira clara e acessível. Os dashboards são projetados para oferecer aos usuários uma visão panorâmica e instantânea dos dados que eles precisam para tomar decisões informadas e realizar tarefas específicas.</p>
+            <p class="textDash">Os elementos comuns em um dashboard incluem gráficos, tabelas, widgets personalizáveis e links para outras partes do sistema. Eles podem abranger uma variedade de finalidades, desde rastreamento de métricas de negócios, como vendas e análises de marketing, até o controle de sistemas de automação residencial ou monitoramento de saúde pessoal.</p>
+            <p class="textDash">A eficácia de um dashboard reside na sua capacidade de apresentar informações de forma clara e concisa, ajudando os usuários a economizar tempo e recursos. As escolhas de design, a organização de elementos e a escolha de métricas relevantes desempenham um papel fundamental na criação de dashboards úteis e intuitivos.</p>
+            <p class="textDash">Em resumo, um modelo de página dashboard é uma estrutura de página web que permite aos desenvolvedores e designers criar painéis de controle eficazes, enquanto um dashboard em si é uma ferramenta valiosa para apresentar informações e funcionalidades de forma eficaz e eficiente aos usuários. É uma parte essencial de muitos aplicativos e sistemas que desejam fornecer uma experiência de usuário informada e prática.</p>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
