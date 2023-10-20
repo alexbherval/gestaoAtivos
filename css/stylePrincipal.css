@@ -38,7 +38,7 @@ body{
       margin-left: -265px;
       position: absolute;
       min-height: 100vh;
-      z-index: 1;
+      z-index: 1000000;
    
     }
     #side_nav.active{
@@ -50,8 +50,8 @@ body{
   background-color: #fefefe;
   margin: 0;
   padding: 0;
-  min-height: 500px;
-  max-height: 500px;
+  min-height: 400px;
+  max-height: 400px;
 }
 
 #frmGlobal .card-body input {
