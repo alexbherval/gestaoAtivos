@@ -85,6 +85,8 @@
     <!-- Conteúdo da Pagina -->
     <div class="content">
       <!--Navbar no topo -->
+      <!--removendo nav do topo-->
+  
       <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container-fluid">
           <div class="d-flex justify-content-between d-md-none d-block">
@@ -108,13 +110,14 @@
           </div>
         </div>
       </nav>
+
       <!-- Fim navbar topo  -->
       <!-- Espaço de 10px -->
       <div class="mt-2"></div>
       <!-- Card no Restante da Página -->
-      <div class="container">
+      <div class="container containerMyForms">
         <div class="row">
-          <div class="col">
+          <div class="col col-lg-12 col-xl-12">
             <div class="card card-ajustavel">
               <!-- Area de alteração e insersão de dados-->
               <div class="card-header">
@@ -128,13 +131,13 @@
                     <div class="container mt-3">
                       <div class="row g-3">
                         <!-- Card 1 (col-12 em dispositivos pequenos e col-lg-3 em dispositivos maiores) -->
-                        <div class="col-12 col-lg-3 mb-4 dashBodyCard">
+                        <div class="col-12 col-lg-6 col-xl-3 mb-4 dashBodyCard">
                           <div class="card ">
                             <div class="row">
-                              <div class="col-4">
+                              <div class="col-4 col-xl-3">
                                 <img src="../../img/imgPlacaRepair.jpg" class="card-img" alt="Imagem 1">
                               </div>
-                              <div class="col-8">
+                              <div class="col-8 col-xl-9">
                                 <div class="card-body ">
                                   <h5 class="card-title">CADASTRADOS</h5>
                                   <p class="card-text">186</p>
@@ -150,13 +153,13 @@
                           </div>
                         </div>
                         <!-- Card 2 (col-12 em dispositivos pequenos e col-lg-3 em dispositivos maiores) -->
-                        <div class="col-12 col-lg-3 mb-4 dashBodyCard">
+                        <div class="col-12 col-lg-6 col-xl-3 mb-4 dashBodyCard">
                           <div class="card">
                             <div class="row">
-                              <div class="col-4">
+                              <div class="col-4 col-xl-3">
                                 <img src="../../img/computerJobs.jpg" class="card-img" alt="Imagem 2">
                               </div>
-                              <div class="col-8">
+                              <div class="col-8 col-xl-9">
                                 <div class="card-body">
                                   <h5 class="card-title">INSTALADOS</h5>
                                   <p class="card-text">184</p>
@@ -172,13 +175,13 @@
                           </div>
                         </div>
                         <!-- Card 3 (col-12 em dispositivos pequenos e col-lg-3 em dispositivos maiores) -->
-                        <div class="col-12 col-lg-3 mb-4 dashBodyCard">
+                        <div class="col-12 col-lg-6 col-xl-3 mb-4 dashBodyCard">
                           <div class="card">
                             <div class="row">
-                              <div class="col-4">
+                              <div class="col-4 col-xl-3">
                                 <img src="../../img/computerDeprecate.jpg" class="card-img" alt="Imagem 3">
                               </div>
-                              <div class="col-8">
+                              <div class="col-8 col-xl-9">
                                 <div class="card-body">
                                   <h5 class="card-title">DANIFICADOS</h5>
                                   <p class="card-text">024</p>
@@ -195,13 +198,13 @@
                         </div>
 
                         <!-- Card 4 (col-12 em dispositivos pequenos e col-lg-3 em dispositivos maiores) -->
-                        <div class="col-12 col-lg-3 mb-4 dashBodyCard">
+                        <div class="col-12 col-lg-6 col-xl-3 mb-4 dashBodyCard">
                           <div class="card">
                             <div class="row">
-                              <div class="col-4">
+                              <div class="col-4 col-xl-3">
                                 <img src="../../img/computerDed.jpg" class="card-img" alt="Imagem 4">
                               </div>
-                              <div class="col-8">
+                              <div class="col-8 col-xl-9">
                                 <div class="card-body">
                                   <h5 class="card-title">DESCARTADOS</h5>
                                   <p class="card-text">018</p>
@@ -220,14 +223,14 @@
                     </div>
                     <!--fim dos cards-->
                     <!-- Espaco do card tabel view -->
-                    <div class="container mt-3">
+                    <div class="container mt-1" id="tableViews">
                       <div class="row">
-                        <div class="col-12 col-lg-6 ">
+                        <div class="col-12 col-lg-12 pb-3" id="cardSearch">
                           <div class="card">
                             <div class="card-body">
                               <h5 class="card-title">Busca</h5>
                               <div class="row g-1">
-                                <div class="col-5">
+                                <div class="col-5 ">
                                   <div class="form-group">
                                       <select id="selecao" class="form-select" aria-label="Default select example">
                                       <option value="opcao0">Tipo de equipamento</option>
@@ -251,9 +254,9 @@
                           </div>
 
                         </div>
-                        <div class="col-12 col-lg-6 mb-3">
+                        <div class="col-12 col-lg-12 mb-3" id="cardTableEquip">
                           <div class="card">
-                            <div class="card-body pt-0" style="max-height: 500px; overflow-y: scroll;">
+                            <div class="card-body pt-0">
                               <!--<h5 class="card-title">Tabela Resultante</h5>-->
                               <table class="table table-container table-striped table-hover">
                                 <thead class="table-header">
@@ -262,6 +265,7 @@
                                     <th scope="col">PATRIMÔNIO</th>
                                     <th scope="col">CÓD. PRODUTO</th>
                                     <th scope="col">NOME</th>
+                                    <th scope="col">AÇÃO</th>
                                   </tr>
                                 </thead>
                                 <tbody>
@@ -271,6 +275,7 @@
                                     <td>004847</td>
                                     <td>BX36M4678TY</td>
                                     <td>BR-SECRE-01</td>
+                                    <td>BR-SECRE-01</td>
                                   </tr>
                                   <!-- Adicione mais linhas conforme necessário -->
                                   <tr>
@@ -278,11 +283,6 @@
                                     <td>004847</td>
                                     <td>BX36M4678TY</td>
                                     <td>BR-SECRE-01</td>
-                                  </tr>
-                                  <tr>
-                                    <td>26YB45TW1789</td>
-                                    <td>004847</td>
-                                    <td>BX36M4678TY</td>
                                     <td>BR-SECRE-01</td>
                                   </tr>
                                   <tr>
@@ -290,25 +290,9 @@
                                     <td>004847</td>
                                     <td>BX36M4678TY</td>
                                     <td>BR-SECRE-01</td>
-                                  </tr>
-                                  <tr>
-                                    <td>26YB45TW1789</td>
-                                    <td>004847</td>
-                                    <td>BX36M4678TY</td>
                                     <td>BR-SECRE-01</td>
                                   </tr>
-                                  <tr>
-                                    <td>26YB45TW1789</td>
-                                    <td>004847</td>
-                                    <td>BX36M4678TY</td>
-                                    <td>BR-SECRE-01</td>
-                                  </tr>
-                                  <tr>
-                                    <td>26YB45TW1789</td>
-                                    <td>004847</td>
-                                    <td>BX36M4678TY</td>
-                                    <td>BR-SECRE-01</td>
-                                  </tr>
+
                                 </tbody>
                               </table>
                             </div>

@@ -4,8 +4,8 @@ body{
    
    #side_nav{
     background: #000;
-    min-width: 265px;
-    max-width: 265px;
+    min-width: 200px;
+    max-width: 200px;
     transition: all 0.3s;
    }
    .content{
@@ -35,7 +35,7 @@ body{
    
    @media(max-width: 767px){
     #side_nav{
-      margin-left: -265px;
+      margin-left: -200px;
       position: absolute;
       min-height: 100vh;
       z-index: 1000000;
@@ -76,7 +76,7 @@ body{
 
 /* Calcula a altura do card */
 .card-ajustavel {
-  height: calc(100vh - 56px - 30px);
+  height: calc(100vh - 100px);
   overflow: auto; /* Adicione rolagem se o conteúdo do card for muito grande */
 }
 
@@ -116,10 +116,52 @@ body{
 .table-header {
 
   position: sticky;
-  top: 0;
+  top: 1px;
   background-color: #fefefe; /* Cor de fundo do cabeçalho */
-  z-index: 1;
+  z-index: 0;
 }
-table {
+.table {
   width: 100%;
+}
+
+#cardTableEquip {
+  max-height: 500px;
+  height: 300px;
+  overflow-y: scroll;
+}
+
+
+
+@media(min-width: 1140px){
+
+.dashBodyCard .card-body {
+  padding-bottom: 0px;
+}
+.dashBodyCard .card img {
+    width: 85px;
+    height: auto;
+  }
+  .dashBodyCard .card h5 {
+    text-align: right;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .dashBodyCard .card p {
+    text-align: end;
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 0px;
+  }
+
+  #cardTableEquip {
+    height: 200px;
+    overflow-y: none;
+
+  }
+  .table-container {
+    max-height: 150px; /* Altura máxima da tabela */
+  }
+
+
 }
