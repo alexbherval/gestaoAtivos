@@ -113,21 +113,16 @@ body{
   max-height: 300px; /* Altura máxima da tabela */
   overflow: auto; /* Rolagem vertical */
 }
-.table-header {
-
-  position: sticky;
-  top: 1px;
-  background-color: #fefefe; /* Cor de fundo do cabeçalho */
-  z-index: 0;
-}
-.table {
-  width: 100%;
-}
 
 #cardTableEquip {
   max-height: 500px;
   height: 300px;
-  overflow-y: scroll;
+
+}
+
+.btn-xs {
+  padding: 0.1rem 0.4rem;
+  font-size: 0.75rem;
 }
 
 
@@ -151,13 +146,10 @@ body{
     text-align: end;
     font-size: 25px;
     font-weight: 700;
-    padding-bottom: 0px;
   }
 
   #cardTableEquip {
     height: 200px;
-    overflow-y: none;
-
   }
   .table-container {
     max-height: 150px; /* Altura máxima da tabela */

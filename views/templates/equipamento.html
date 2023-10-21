@@ -33,7 +33,6 @@
 
 <body>
   <!--menu-->
-
   <main class="main-container d-flex">
     <!-- Inicio menu lateral -->
     <nav class="sidebar" id="side_nav">
@@ -41,15 +40,9 @@
         <a class="navbar-brand" href="#">
           <img src="../../img/logo.png" alt="Logo" class="img-fluid">
         </a>
-        <!-- Escondendo item sem uso-->
-        <!--
-      <h1 class="fs-4"><span class="bg-warning text-dark rounded shadow px-2 me-2">JS</span> <span
-          class="text-white">DEVT3CH CODE</span></h1>
-      -->
         <button class="btn d-md-none d-block close-btn px-1 py-0 text-white"><i class="bi bi-box-arrow-in-up-left"></i>
         </button>
       </div>
-
       <ul class="list-unstyled px-2">
         <li class="active"><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="bi bi-speedometer2"></i>
             Dashboard</a></li>
@@ -61,14 +54,12 @@
             Gerência</a></li>
         <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="bi bi-shield-check"></i>
             Administração</a></li>
-
         <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="bi bi-archive"></i>
             Estoque</a></li>
         <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i
               class="bi bi-wrench-adjustable-circle"></i> Ferramentas</a></li>
       </ul>
       <hr class="h-color mx-2">
-
       <ul class="list-unstyled px-2">
         <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="bi bi-gear-fill"></i>
             Configurações</a></li>
@@ -77,40 +68,36 @@
             <span class="bg-dark rounded-pill text-white py-0 px-2">02</span>
           </a>
         </li>
-
       </ul>
-
     </nav>
     <!--  Final do menu lateral-->
     <!-- Conteúdo da Pagina -->
     <div class="content">
       <!--Navbar no topo -->
       <!--removendo nav do topo-->
-  
-      <nav class="navbar navbar-expand-md navbar-light bg-light">
+
+      <nav class="navbar navbar-expand-md navbar-light bg-dark">
         <div class="container-fluid">
           <div class="d-flex justify-content-between d-md-none d-block">
-            <button class="btn px-1 py-0 open-btn me-2"><i class="bi bi-box-arrow-in-up-right"></i></button>
-            <a class="navbar-brand fs-4" href="#"><span class="bg-warning rounded px-2 py-0 text-white">JS</span></a>
-
+            <button class="btn px-1 py-0 open-btn me-2"><i class="bi bi-box-arrow-in-up-right"
+                style="color: #fefefe;"></i></button>
+            <a class="navbar-brand fs-4" href="#"><img src="../../img/logo(200×60px).png" alt="" style="height:50px;">
+              <!--<span class="bg-warning rounded px-2 py-0 text-white">JS</span>--></a>
           </div>
           <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
-            <i class="bi bi-person-bounding-box"></i>
+            <i class="bi bi-person-bounding-box" style="color: #fefefe;"></i>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Profile</a>
+                <a class="nav-link active" aria-current="page" href="#" style="color: #fefefe;">Profile</a>
               </li>
-
             </ul>
-
           </div>
         </div>
       </nav>
-
       <!-- Fim navbar topo  -->
       <!-- Espaço de 10px -->
       <div class="mt-2"></div>
@@ -196,7 +183,6 @@
                             </div>
                           </div>
                         </div>
-
                         <!-- Card 4 (col-12 em dispositivos pequenos e col-lg-3 em dispositivos maiores) -->
                         <div class="col-12 col-lg-6 col-xl-3 mb-4 dashBodyCard">
                           <div class="card">
@@ -232,7 +218,7 @@
                               <div class="row g-1">
                                 <div class="col-5 ">
                                   <div class="form-group">
-                                      <select id="selecao" class="form-select" aria-label="Default select example">
+                                    <select id="selecao" class="form-select" aria-label="Default select example">
                                       <option value="opcao0">Tipo de equipamento</option>
                                       <option value="opcao1">COMPUTARDOR</option>
                                       <option value="opcao2">MONITOR</option>
@@ -252,49 +238,98 @@
                               </div>
                             </div>
                           </div>
-
                         </div>
                         <div class="col-12 col-lg-12 mb-3" id="cardTableEquip">
                           <div class="card">
-                            <div class="card-body pt-0">
+                            <div class="card-body pt-1">
                               <!--<h5 class="card-title">Tabela Resultante</h5>-->
-                              <table class="table table-container table-striped table-hover">
-                                <thead class="table-header">
-                                  <tr>
-                                    <th scope="col">Nº SERIAL</th>
-                                    <th scope="col">PATRIMÔNIO</th>
-                                    <th scope="col">CÓD. PRODUTO</th>
-                                    <th scope="col">NOME</th>
-                                    <th scope="col">AÇÃO</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <!-- Aqui você pode gerar as linhas da tabela dinamicamente -->
-                                  <tr>
-                                    <td>26YB45TW1789</td>
-                                    <td>004847</td>
-                                    <td>BX36M4678TY</td>
-                                    <td>BR-SECRE-01</td>
-                                    <td>BR-SECRE-01</td>
-                                  </tr>
-                                  <!-- Adicione mais linhas conforme necessário -->
-                                  <tr>
-                                    <td>26YB45TW1789</td>
-                                    <td>004847</td>
-                                    <td>BX36M4678TY</td>
-                                    <td>BR-SECRE-01</td>
-                                    <td>BR-SECRE-01</td>
-                                  </tr>
-                                  <tr>
-                                    <td>26YB45TW1789</td>
-                                    <td>004847</td>
-                                    <td>BX36M4678TY</td>
-                                    <td>BR-SECRE-01</td>
-                                    <td>BR-SECRE-01</td>
-                                  </tr>
-
-                                </tbody>
-                              </table>
+                              <div class="table-responsive" style="max-height: 210px;">
+                                <table class="table table-striped table-hover">
+                                  <thead class="table-header sticky-top bg-light">
+                                    <tr>
+                                      <th scope="col">Nº SERIAL</th>
+                                      <th scope="col">PATRIMÔNIO</th>
+                                      <th scope="col">CÓD. PRODUTO</th>
+                                      <th scope="col">NOME</th>
+                                      <th scope="col">AÇÃO</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <!-- Aqui você pode gerar as linhas da tabela dinamicamente -->
+                                    <tr>
+                                      <td>26YB45TW1789</td>
+                                      <td>004847</td>
+                                      <td>BX36M4678TY</td>
+                                      <td>BR-SECRE-01</td>
+                                      <td>
+                                        <div class="btnAction">
+                                          <button type="button" class="btn btn-sm btn-warning rounded-circle btn-xs"
+                                            title="Editar"><i class="bi bi-pencil-square"></i></button>
+                                          <button type="button" class="btn btn-sm btn-danger rounded-circle btn-xs"
+                                            title="Descartar"><i class="bi bi-trash3"></i></button>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <!-- Adicione mais linhas conforme necessário -->
+                                    <tr>
+                                      <td>26YB45TW1789</td>
+                                      <td>004847</td>
+                                      <td>BX36M4678TY</td>
+                                      <td>BR-SECRE-01</td>
+                                      <td>
+                                        <div class="btnAction">
+                                          <button type="button" class="btn btn-sm btn-warning rounded-circle btn-xs"
+                                            title="Editar"><i class="bi bi-pencil-square"></i></button>
+                                          <button type="button" class="btn btn-sm btn-danger rounded-circle btn-xs"
+                                            title="Descartar"><i class="bi bi-trash3"></i></button>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>26YB45TW1789</td>
+                                      <td>004847</td>
+                                      <td>BX36M4678TY</td>
+                                      <td>BR-SECRE-01</td>
+                                      <td>
+                                        <div class="btnAction">
+                                          <button type="button" class="btn btn-sm btn-warning rounded-circle btn-xs"
+                                            title="Editar"><i class="bi bi-pencil-square"></i></button>
+                                          <button type="button" class="btn btn-sm btn-danger rounded-circle btn-xs"
+                                            title="Descartar"><i class="bi bi-trash3"></i></button>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>26YB45TW1789</td>
+                                      <td>004847</td>
+                                      <td>BX36M4678TY</td>
+                                      <td>BR-SECRE-01</td>
+                                      <td>
+                                        <div class="btnAction">
+                                          <button type="button" class="btn btn-sm btn-warning rounded-circle btn-xs"
+                                            title="Editar"><i class="bi bi-pencil-square"></i></button>
+                                          <button type="button" class="btn btn-sm btn-danger rounded-circle btn-xs"
+                                            title="Descartar"><i class="bi bi-trash3"></i></button>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>26YB45TW1789</td>
+                                      <td>004847</td>
+                                      <td>BX36M4678TY</td>
+                                      <td>BR-SECRE-01</td>
+                                      <td>
+                                        <div class="btnAction">
+                                          <button type="button" class="btn btn-sm btn-warning rounded-circle btn-xs"
+                                            title="Editar"><i class="bi bi-pencil-square"></i></button>
+                                          <button type="button" class="btn btn-sm btn-danger rounded-circle btn-xs"
+                                            title="Descartar"><i class="bi bi-trash3"></i></button>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
                             </div>
                           </div>
                         </div>
