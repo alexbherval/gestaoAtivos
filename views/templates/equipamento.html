@@ -133,7 +133,7 @@
                             </div>
                             <div class="row">
                               <div>
-                                <button type="button" class="btn btn-success"><i class="bi bi-bag-plus"></i>
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#cadEquipModal"><i class="bi bi-bag-plus"></i>
                                   Cadastrar</button>
                               </div>
                             </div>
@@ -338,12 +338,116 @@
 
 
 
+                    <!-- CADASTRO DE EQUIPAMENTOS -->
+                      <!-- MODAL -->
+                      <div class="modal " id="cadEquipModal"  tabindex="-1" aria-labelledby="cadEquipModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                        <div class="modal-dialog" style="max-width: 55%; max-height: 90vh;">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="cadEquipModalLabel"><i class="bi bi-box-seam"></i> CADASTRO DE EQUIPAMENTO</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="container col-12 mb-4">
+                                <form class="row g-2">
+                                  <!-- Seu formulário de cadastro de equipamentos aqui -->
+                                  <div class="row g-2">
+                                    <div class="col-md">
+                                      <div class="form-floating">
+                                        <select class="form-select" id="inputTypeEquip">
+                                          <option value="0"></option>
+                                          <option value="1">Computador</option>
+                                          <option value="2">Monitor</option>
+                                          <option value="3">Impressora</option>
+                                        </select>
+                                        <label for="inputTypeEquip">Tipo</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-md">
+                                      <div class="form-floating">
+                                        <select class="form-select" id="inputBrand">
+                                          <option value="0"></option>
+                                          <option value="1">Positivo</option>
+                                          <option value="2">HP</option>
+                                          <option value="3">Asus</option>
+                                        </select>
+                                        <label for="inputBrand">Marca</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-md">
+                                      <div class="form-floating">
+                                        <input type="text" class="form-control" id="serialNumber" name="serialNumber" placeholder="Nº de Série" value="">
+                                        <label for="serialNumber">Nº de Série:</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-md">
+                                      <div class="form-floating">
+                                        <input type="text" class="form-control" id="patNumber" name="patNumber" placeholder="Nº de Parimônio:" value="">
+                                        <label for="patNumber">Nº Parimônio:</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row g-2">
+                                    <div class="col-md">
+                                      <div class="form-floating">
+                                        <input type="text" class="form-control" id="productCode" name="productCode" placeholder="Cod. Produto" value="">
+                                        <label for="productCode">Cod. Produto:</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-md">
+                                      <div class="form-floating">
+                                        <input type="text" class="form-control" id="productModel" name="productModel" placeholder="Modelo:" value="">
+                                        <label for="patNumber">Modelo:</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row g-2">
+                                    <div class="col-md">
+                                      <div class="form-floating">
+                                        <input type="text" class="form-control" id="inputNFe" name="inputNFe" placeholder="NFe de entrada" value="">
+                                        <label for="productCode">NFe de entrada:</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-md">
+                                      <div class="form-floating">
+                                        <input type="text" class="form-control" id="inputValorCompra" name="inputValorCompra" placeholder="Valor da compra" value="">
+                                        <label for="patNumber">[R$] Compra </label>
+                                      </div>
+                                    </div>
+                                    <div class="col-md">
+                                      <div class="form-floating">
+                                        <input type="date" class="form-control" id="inputDateCompra" name="inputDateCompra" placeholder="Data da compra" value="">
+                                        <label for="patNumber">Data da compra </label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+                                </form>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-x-circle"></i> Cancelar</button>
+                              <button type="button" class="btn btn-success" id="cadEquipBtn"><i class="bi bi-check-circle"></i> Cadastrar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
 
 
-
-
-
-
+                    <!-- FIM DO CADASTRO DE EQUIPAMENTOS -->
 
 
 

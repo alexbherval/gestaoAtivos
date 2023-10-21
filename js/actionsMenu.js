@@ -21,3 +21,11 @@ openBtn.addEventListener('click', function() {
 closeBtn.addEventListener('click', function() {
     sidebar.classList.remove('active');
 });
+
+document.getElementById('cadEquipBtn').addEventListener('click', function() {
+    // Aqui você pode adicionar lógica para validar e enviar os dados do formulário.
+    
+    // Após o cadastro bem-sucedido, feche o modal.
+    var modal = new bootstrap.Modal(document.getElementById('cadEquipModal'));
+    modal.hide();
+  });
