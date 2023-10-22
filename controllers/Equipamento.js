@@ -1,7 +1,7 @@
 
 const Sequelize = require('sequelize');
-const db = require('../db/connection');
-const sequelize = require('../db/connection');
+const db = require('../config/db/connection');
+const sequelize = require('../config/db/connection');
 
 const Equipamento = db.define('equipamento', {
     serial: {

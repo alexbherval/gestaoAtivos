@@ -8,7 +8,7 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <link rel="stylesheet" href="../../css/stylePrincipal.css">
+  <link rel="stylesheet" href="../../public/css/stylePrincipal.css">
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <!-- JS -->
@@ -27,7 +27,7 @@
     integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
     crossorigin="anonymous"></script>
   <!--JS do Menu-->
-  <script defer src="../../js/actionsMenu.js"></script>
+  <script defer src="../../public/js/actionsMenu.js"></script>
 
 </head>
 
@@ -38,7 +38,7 @@
     <nav class="sidebar" id="side_nav">
       <div class="header-box px-4 d-flex justify-content-between">
         <a class="navbar-brand" href="#">
-          <img src="../../img/logo.png" alt="Logo" class="img-fluid">
+          <img src="../../public/img/logo.png" alt="Logo" class="img-fluid">
         </a>
         <button class="btn d-md-none d-block close-btn px-1 py-0 text-white"><i class="bi bi-box-arrow-in-up-left"></i>
         </button>
@@ -81,7 +81,7 @@
           <div class="d-flex justify-content-between d-md-none d-block">
             <button class="btn px-1 py-0 open-btn me-2"><i class="bi bi-box-arrow-in-up-right"
                 style="color: #fefefe;"></i></button>
-            <a class="navbar-brand fs-4" href="#"><img src="../../img/logo(200×60px).png" alt="" style="height:50px;">
+            <a class="navbar-brand fs-4" href="#"><img src="../../public/img/logo(200×60px).png" alt="" style="height:50px;">
               <!--<span class="bg-warning rounded px-2 py-0 text-white">JS</span>--></a>
           </div>
           <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="collapse"
@@ -122,7 +122,7 @@
                           <div class="card ">
                             <div class="row">
                               <div class="col-4 col-xl-3">
-                                <img src="../../img/imgPlacaRepair.jpg" class="card-img" alt="Imagem 1">
+                                <img src="../../public/img/imgPlacaRepair.jpg" class="card-img" alt="Imagem 1">
                               </div>
                               <div class="col-8 col-xl-9">
                                 <div class="card-body ">
@@ -144,7 +144,7 @@
                           <div class="card">
                             <div class="row">
                               <div class="col-4 col-xl-3">
-                                <img src="../../img/computerJobs.jpg" class="card-img" alt="Imagem 2">
+                                <img src="../../public/img/computerJobs.jpg" class="card-img" alt="Imagem 2">
                               </div>
                               <div class="col-8 col-xl-9">
                                 <div class="card-body">
@@ -166,7 +166,7 @@
                           <div class="card">
                             <div class="row">
                               <div class="col-4 col-xl-3">
-                                <img src="../../img/computerDeprecate.jpg" class="card-img" alt="Imagem 3">
+                                <img src="../../public/img/computerDeprecate.jpg" class="card-img" alt="Imagem 3">
                               </div>
                               <div class="col-8 col-xl-9">
                                 <div class="card-body">
@@ -188,7 +188,7 @@
                           <div class="card">
                             <div class="row">
                               <div class="col-4 col-xl-3">
-                                <img src="../../img/computerDed.jpg" class="card-img" alt="Imagem 4">
+                                <img src="../../public/img/computerDed.jpg" class="card-img" alt="Imagem 4">
                               </div>
                               <div class="col-8 col-xl-9">
                                 <div class="card-body">
@@ -250,7 +250,7 @@
                                       <th scope="col">Nº SERIAL</th>
                                       <th scope="col">PATRIMÔNIO</th>
                                       <th scope="col">CÓD. PRODUTO</th>
-                                      <th scope="col">NOME</th>
+                                      <th scope="col">TIPO</th>
                                       <th scope="col">AÇÃO</th>
                                     </tr>
                                   </thead>
@@ -335,20 +335,17 @@
                         </div>
                       </div>
                     </div>
-
-
-
                     <!-- CADASTRO DE EQUIPAMENTOS -->
                       <!-- MODAL -->
                       <div class="modal " id="cadEquipModal"  tabindex="-1" aria-labelledby="cadEquipModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
-                        <div class="modal-dialog" style="max-width: 55%; max-height: 90vh;">
+                        <div class="modal-dialog">
                           <div class="modal-content">
                             <div class="modal-header">
                               <h5 class="modal-title" id="cadEquipModalLabel"><i class="bi bi-box-seam"></i> CADASTRO DE EQUIPAMENTO</h5>
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                              <div class="container col-12 mb-4">
+                              <div class="container col-12 mb-4 col-sm-12">
                                 <form class="row g-2">
                                   <!-- Seu formulário de cadastro de equipamentos aqui -->
                                   <div class="row g-2">

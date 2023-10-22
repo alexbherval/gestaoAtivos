@@ -125,6 +125,12 @@ body{
   font-size: 0.75rem;
 }
 
+/*MODAL CAD EQUIPAMENTO*/
+.modal-dialog {
+  padding-top: 70px ;
+  max-width: 70%;
+  max-height: 90vh;
+}
 
 
 @media(min-width: 1140px){
@@ -156,4 +162,17 @@ body{
   }
 
 
+}
+
+
+
+/* Consulta de mídia para telas menores */
+@media (max-width: 768px) {
+  .modal-dialog {
+    padding-top: 0px;
+    max-width: 100%; /* Largura máxima para telas menores */
+  }
+  h5 {
+    font-size: 19px;
+  }
 }
