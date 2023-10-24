@@ -1,0 +1,20 @@
+{
+  "name": "abeuinventory",
+  "version": "1.0.0",
+  "description": "Software de gerenciamento de compuadores uniabeu",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js localhost 8000"
+  },
+  "author": "Alex Borges",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "mongoose": "^7.6.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
